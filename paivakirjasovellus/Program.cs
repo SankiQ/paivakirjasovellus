@@ -1,2 +1,3 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿DiaryEntry entry = new DiaryEntry(1, "Testiotsikko", "Testisisältö");
+Console.WriteLine(entry);
+Console.ReadLine();
