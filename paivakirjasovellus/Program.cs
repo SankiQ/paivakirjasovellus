@@ -10,7 +10,7 @@ class Program
         while (running)
         {
             Console.Clear();
-            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.ForegroundColor = ConsoleColor.Cyan;  
             Console.WriteLine("       PÄIVÄKIRJA-SOVELLUS        ");
             Console.ResetColor();
 
@@ -20,23 +20,23 @@ class Program
             Console.ForegroundColor = ConsoleColor.Green;
             Console.Write("  |  1");
             Console.ResetColor();
-            Console.WriteLine("  Lisää uusi merkintä              |");
+            Console.WriteLine("  Lisää uusi merkintä              ");
             Console.ForegroundColor = ConsoleColor.Green;
             Console.Write("  |  2");
             Console.ResetColor();
-            Console.WriteLine("  Näytä kaikki merkinnät           |");
+            Console.WriteLine("  Näytä kaikki merkinnät           ");
             Console.ForegroundColor = ConsoleColor.Green;
             Console.Write("  |  3");
             Console.ResetColor();
-            Console.WriteLine("  Muokkaa merkintää                |");
+            Console.WriteLine("  Muokkaa merkintää                ");
             Console.ForegroundColor = ConsoleColor.Green;
             Console.Write("  |  4");
             Console.ResetColor();
-            Console.WriteLine("  Poista merkintä                  |");
+            Console.WriteLine("  Poista merkintä                  ");
             Console.ForegroundColor = ConsoleColor.Red;
             Console.Write("  |  5");
             Console.ResetColor();
-            Console.WriteLine("  Tallenna ja lopeta               |");
+            Console.WriteLine("  Tallenna ja lopeta               ");
 
             Console.Write("\n  Valintasi  ");
             string choice = Console.ReadLine();
