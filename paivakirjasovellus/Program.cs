@@ -11,11 +11,11 @@ class Program
         {
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Cyan;  
-            Console.WriteLine("       PÄIVÄKIRJA-SOVELLUS        ");
+            Console.WriteLine("       Päiväkirjasovellus        ");
             Console.ResetColor();
 
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("\n    VALIKKO  ");
+            Console.WriteLine("\n    Valikko  ");
             Console.ResetColor();
             Console.ForegroundColor = ConsoleColor.Green;
             Console.Write("  |  1");

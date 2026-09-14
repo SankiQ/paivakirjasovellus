@@ -1,9 +1,14 @@
-﻿public class DiaryEntry
+﻿using System;
+
+public class DiaryEntry
 {
     public int Id { get; set; }
     public DateTime Date { get; set; }
     public string Title { get; set; }
     public string Content { get; set; }
+
+    // Tämä tyhjä konstruktori on pakollinen - ilman sitä lataus tiedostosta ei toimi
+    public DiaryEntry() { }
 
     public DiaryEntry(int id, string title, string content)
     {
