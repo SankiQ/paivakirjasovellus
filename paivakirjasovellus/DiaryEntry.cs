@@ -7,7 +7,6 @@ public class DiaryEntry
     public string Title { get; set; }
     public string Content { get; set; }
 
-    // Tämä tyhjä konstruktori on pakollinen - ilman sitä lataus tiedostosta ei toimi
     public DiaryEntry() { }
 
     public DiaryEntry(int id, string title, string content)

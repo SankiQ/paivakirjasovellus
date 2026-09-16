@@ -10,7 +10,7 @@ public class DiaryManager
     public DiaryManager()
     {
         fileHandler = new FileHandler();
-        entries = fileHandler.LataaMerkinnat(); // UUSI: ladataan vanhat merkinnät käynnistyksessä
+        entries = fileHandler.LataaMerkinnat(); // lataa vanhat merkinnöt
     }
 
     public void AddEntry()
@@ -38,7 +38,7 @@ public class DiaryManager
         DiaryEntry entry = new DiaryEntry(newId, title, content);
         entries.Add(entry);
 
-        fileHandler.TallennaMerkinnat(entries); // UUSI
+        fileHandler.TallennaMerkinnat(entries);
 
         Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine($"\n   Merkintä lisätty! ({entry.Date:dd.MM.yyyy})");
@@ -100,7 +100,7 @@ public class DiaryManager
             if (!string.IsNullOrWhiteSpace(newContent))
                 entry.Content = newContent;
 
-            fileHandler.TallennaMerkinnat(entries); // UUSI
+            fileHandler.TallennaMerkinnat(entries); 
 
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("\n   Merkintä päivitetty!");
@@ -139,7 +139,7 @@ public class DiaryManager
             {
                 entries.RemoveAt(index - 1);
                 UpdateIds();
-                fileHandler.TallennaMerkinnat(entries); // UUSI
+                fileHandler.TallennaMerkinnat(entries);
 
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("\n   Merkintä poistettu!");

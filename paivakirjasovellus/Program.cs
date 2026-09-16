@@ -9,6 +9,9 @@ class Program
         bool running = true;
         while (running)
         {
+            // konsolin tekstit ja muut näkyvät hommat
+            //värit
+            //Välit yms
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Cyan;  
             Console.WriteLine("       Päiväkirjasovellus        ");
